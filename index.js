@@ -1,5 +1,4 @@
-const mix = require('/Users/abhishek.sat/Sites/auto/wp-content/themes/autos/node_modules/laravel-mix/src/index');
-// const mix = require('laravel-mix');
+const mix = require('laravel-mix');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const bladeLoader = require.resolve('./loader');
 
