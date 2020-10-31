@@ -1,0 +1,23 @@
+{
+  "name": "single-file-blade-component",
+  "version": "0.0.1",
+  "description": "Laravel Mix extension which let you use blade components as single file components.",
+  "main": "index.js",
+  "keywords": [
+    "laravel",
+    "laravel-mix",
+    "single file components",
+    "blade component",
+    "single file blade component",
+    "single-file-blade-component"
+  ],
+  "author": "Abhishek Satre",
+  "peerDependencies": {
+    "laravel-mix": "^5.0.0"
+  },
+  "dependencies": {
+    "loader-utils": "^2.0.0",
+    "mini-css-extract-plugin": "^1.2.1"
+  },
+  "license": "MIT"
+}
