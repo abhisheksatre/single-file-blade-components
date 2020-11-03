@@ -43,7 +43,7 @@ class SingleFileBladeComponent {
     }
 
     webpackPlugins() {
-        return [new MiniCssExtractPlugin()];
+        return [new MiniCssExtractPlugin(Config.miniCssExtractPlugin || {})];
     }
 
 
