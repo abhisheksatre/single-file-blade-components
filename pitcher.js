@@ -1,4 +1,5 @@
 const loaderUtils = require('loader-utils');
+const qs = require('querystring');
 
 const isPitcher = l => l.path === __filename;
 const isStyleLoader = l => /(\/|\\|@)style-loader/.test(l.path);
@@ -7,6 +8,9 @@ const isExtractPlugin = l => /(\/|\\|@)mini-css-extract-plugin/.test(l.path);
 module.exports = code => code;
 
 module.exports.pitch = function (remainingRequest) {
+
+    const rawQuery = this.resourceQuery.slice(1);
+    const incomingQuery = qs.parse(rawQuery);
 
     /**
      * Copied from vue-loader
@@ -35,14 +39,18 @@ module.exports.pitch = function (remainingRequest) {
         ].join('!'))
     }
 
+    const shouldExtractCss = incomingQuery.extract !== 'false';
+
     /**
      * Rearrange extract plugin loader and remove unwanted loaders
      */
     let loaders = this.loaders.reduce((accumulator, loader) => {
 
         if (isExtractPlugin(loader)) {
-            accumulator.unshift(loader);
-        } else if (!isPitcher(loader) && !isStyleLoader(loader)) {
+            if (shouldExtractCss === true) {
+                accumulator.unshift(loader);
+            }
+        } else if (!isPitcher(loader) && (!isStyleLoader(loader) || (isStyleLoader(loader) && shouldExtractCss === false))) {
             accumulator.push(loader);
         }
 
