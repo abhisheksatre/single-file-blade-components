@@ -19,10 +19,12 @@ module.exports = function (source) {
     /**
      * Convert x-style and x-script tag to style and script tag
      */
-    source = source.replace(/<x-style/g, '<style xbType="style"');
+    source = source.replace(/<x-style/g, '<style');
+    source = source.replace(/<style/g, '<style xbType="style"');
     source = source.replace(/<\/x-style/g, '</style');
 
-    source = source.replace(/<x-script/g, '<script xbType="script"');
+    source = source.replace(/<x-script/g, '<script');
+    source = source.replace(/<script/g, '<script xbType="script"');
     source = source.replace(/<\/x-script/g, '</script');
 
     return source;
