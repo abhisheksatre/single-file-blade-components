@@ -1,11 +1,11 @@
-# Single File Blade Component
+# Single File Blade Components
 
 ![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
 [![Latest Version on NPM](https://img.shields.io/npm/v/single-file-blade-component.svg?style=flat-square)](https://npmjs.com/package/single-file-blade-component)
 
 Laravel Mix extension which lets you use blade components like [Vue's single file components](https://vuejs.org/v2/guide/single-file-components.html).
 
-![Single File Blade Component](banner.png)
+![Single File Blade Components](banner.png)
 
 
 ## Usage
