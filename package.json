@@ -23,5 +23,6 @@
     "type": "git",
     "url": "git+https://github.com/abhisheksatre/single-file-blade-component.git"
   },
+  "homepage": "https://github.com/abhisheksatre/single-file-blade-component#readme",
   "license": "MIT"
 }
