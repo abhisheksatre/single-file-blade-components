@@ -21,8 +21,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhisheksatre/single-file-blade-component.git"
+    "url": "git+https://github.com/abhisheksatre/single-file-blade-components.git"
   },
-  "homepage": "https://github.com/abhisheksatre/single-file-blade-component#readme",
+  "homepage": "https://github.com/abhisheksatre/single-file-blade-components#readme",
   "license": "MIT"
 }
