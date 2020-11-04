@@ -27,7 +27,9 @@ mix.singleFileBladeComponent('resources/views/components/alert.blade.php', 'publ
 ```
 
 ## How it works
-This extension extracts JS/CSS from blade file into separate JS/CSS file. During build process, it extracts `style` or `x-style` tag content into a separate css file and `script` or `x-script` tag content into a separate js file. [See demo](https://youtu.be/Fxk96HHA6yU)    
+This extension extracts JS/CSS from blade file into separate JS/CSS file. During build process, it extracts `style` or `x-style` tag content into a separate css file and `script` or `x-script` tag content into a separate js file. 
+
+[Video demo](https://youtu.be/Fxk96HHA6yU)    
 
 ## Examples:
 
