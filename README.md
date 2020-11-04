@@ -4,6 +4,9 @@
 
 Laravel Mix extension which lets you use blade components like [Vue's single file components](https://vuejs.org/v2/guide/single-file-components.html).
 
+![Single File Blade Component](banner.png)
+
+
 ## Usage
 First, install the extension.
 
