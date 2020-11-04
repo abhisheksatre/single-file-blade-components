@@ -118,8 +118,9 @@ mix.options({
 ``` 
 
 ## Caveat
-Blade renders `script` or `style` tag code on the frontend. To avoid this you can wrap `script` and `style` tag in falsy if statement or create `x-style` and `x-script` blade component. 
-
+Code written in `script` or `style` tag should not be rendered directly on the frontend as it is a untranspiled code. 
+To avoid this you can wrap `script` and `style` tag in falsy if statement or create `x-style` and `x-script` blade component. 
+ 
 ```html
 @if(false)
     <style>
