@@ -2,7 +2,7 @@
 
 ![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
 
-Laravel Mix extension which let you use blade components as single file components.
+Laravel Mix extension which lets you use blade components like [Vue's single file components](https://vuejs.org/v2/guide/single-file-components.html).
 
 ## Usage
 First, install the extension.
