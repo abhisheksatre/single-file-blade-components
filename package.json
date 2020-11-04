@@ -1,6 +1,6 @@
 {
   "name": "single-file-blade-component",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Laravel Mix extension which lets you use blade components like Vue's single file components.",
   "main": "index.js",
   "keywords": [
