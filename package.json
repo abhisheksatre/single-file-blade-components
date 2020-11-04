@@ -1,7 +1,7 @@
 {
   "name": "single-file-blade-component",
   "version": "0.0.1",
-  "description": "Laravel Mix extension which let you use blade components as single file components.",
+  "description": "Laravel Mix extension which lets you use blade components like Vue's single file components.",
   "main": "index.js",
   "keywords": [
     "laravel",
@@ -18,6 +18,10 @@
   "dependencies": {
     "loader-utils": "^2.0.0",
     "mini-css-extract-plugin": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhisheksatre/single-file-blade-component.git"
   },
   "license": "MIT"
 }
